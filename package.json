@@ -1,0 +1,30 @@
+{
+  "name": "configurator",
+  "version": "0.0.1", 
+  "description": "Simple REST server for storing config data ",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.12.3",
+    "nedb": "^1.1.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/artsoroka/configurator.git"
+  },
+  "keywords": [
+    "config",
+    "rest",
+    "tools"
+  ],
+  "author": "Artem Soroka <art.soroka@yandex.ru>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/artsoroka/configurator/issues"
+  },
+  "homepage": "https://github.com/artsoroka/configurator"
+}
