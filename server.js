@@ -1,6 +1,12 @@
 var app = require('express')(); 
 var Configurator = require('./configurator');
 
+app.use(function(req,res,next){
+  if(Configurator.isAllowed(req.ip))
+    return res.send(''); 
+  next(); 
+}); 
+
 app.get('/:project.:format', function(req, res){
     Configurator.find({
          project: req.params.project, 
