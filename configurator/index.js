@@ -10,7 +10,7 @@ module.exports = {
     ], 
 
     isAllowed: function(ip){
-        return this.allowedHosts.indexOf(ip) == -1; 
+        return this.allowedHosts.indexOf(ip) != -1; 
     },
     
     set: function(record, callback){
